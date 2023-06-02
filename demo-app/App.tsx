@@ -13,8 +13,6 @@ import CryptoJS from 'crypto-js';
 
 const { PayZaloBridge } = NativeModules;
 
-console.log(PayZaloBridge);
-
 const payZaloBridgeEmitter = new NativeEventEmitter(PayZaloBridge);
 
 const subscription = payZaloBridgeEmitter.addListener('EventPayZalo', (data) => {
@@ -26,7 +24,7 @@ const subscription = payZaloBridgeEmitter.addListener('EventPayZalo', (data) => 
 });
 
 export default function App() {
-  const [money, setMoney] = React.useState('10000');
+  const [money, setMoney] = React.useState('1000');
   const [token, setToken] = React.useState('');
   const [returncode, setReturnCode] = React.useState('');
 
