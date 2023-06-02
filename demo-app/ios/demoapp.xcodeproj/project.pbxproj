@@ -12,8 +12,8 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1D25B0FC2A29E30200D5DD24 /* zpdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D25B0F92A29E28F00D5DD24 /* zpdk.framework */; };
 		1D25B0FD2A29E30200D5DD24 /* zpdk.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1D25B0F92A29E28F00D5DD24 /* zpdk.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1D25B1022A29E42C00D5DD24 /* PayZaloBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D25B1002A29E42C00D5DD24 /* PayZaloBridge.m */; };
 		1DFB7C182A29CEA500660F31 /* AppDelegate.h in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FAF1A68108700A75B9A /* AppDelegate.h */; };
-		1DFB7C2B2A29D43C00660F31 /* PayZaloBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFB7C2A2A29D43C00660F31 /* PayZaloBridge.m */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
 		96905EF65AED1B983A6B3ABC /* libPods-demoapp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 58EEBF8E8E6FB1BC6CAF49B5 /* libPods-demoapp.a */; };
 		B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC715A2D49A985799AEE119 /* ExpoModulesProvider.swift */; };
@@ -43,8 +43,8 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = demoapp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = demoapp/main.m; sourceTree = "<group>"; };
 		1D25B0F92A29E28F00D5DD24 /* zpdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = zpdk.framework; sourceTree = "<group>"; };
-		1DFB7C292A29D43C00660F31 /* PayZaloBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayZaloBridge.h; sourceTree = "<group>"; };
-		1DFB7C2A2A29D43C00660F31 /* PayZaloBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayZaloBridge.m; sourceTree = "<group>"; };
+		1D25B1002A29E42C00D5DD24 /* PayZaloBridge.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayZaloBridge.m; sourceTree = "<group>"; };
+		1D25B1012A29E42C00D5DD24 /* PayZaloBridge.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayZaloBridge.h; sourceTree = "<group>"; };
 		58EEBF8E8E6FB1BC6CAF49B5 /* libPods-demoapp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-demoapp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C2E3173556A471DD304B334 /* Pods-demoapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoapp.debug.xcconfig"; path = "Target Support Files/Pods-demoapp/Pods-demoapp.debug.xcconfig"; sourceTree = "<group>"; };
 		7A4D352CD337FB3A3BF06240 /* Pods-demoapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demoapp.release.xcconfig"; path = "Target Support Files/Pods-demoapp/Pods-demoapp.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 		13B07FAE1A68108700A75B9A /* demoapp */ = {
 			isa = PBXGroup;
 			children = (
+				1D25B1012A29E42C00D5DD24 /* PayZaloBridge.h */,
+				1D25B1002A29E42C00D5DD24 /* PayZaloBridge.m */,
 				1D25B0F92A29E28F00D5DD24 /* zpdk.framework */,
 				BB2F792B24A3F905000567C9 /* Supporting */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -153,8 +155,6 @@
 		D7E4C46ADA2E9064B798F356 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				1DFB7C292A29D43C00660F31 /* PayZaloBridge.h */,
-				1DFB7C2A2A29D43C00660F31 /* PayZaloBridge.m */,
 				92DBD88DE9BF7D494EA9DA96 /* demoapp */,
 			);
 			name = ExpoModulesProviders;
@@ -314,7 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
-				1DFB7C2B2A29D43C00660F31 /* PayZaloBridge.m in Sources */,
+				1D25B1022A29E42C00D5DD24 /* PayZaloBridge.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				B18059E884C0ABDD17F3DC3D /* ExpoModulesProvider.swift in Sources */,
 				CCD8C2846DCA47CCB870DC4D /* noop-file.swift in Sources */,
