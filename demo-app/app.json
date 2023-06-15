@@ -23,7 +23,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.vanhuy170496.demoapp"
+      "package": "com.demoapptoapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"

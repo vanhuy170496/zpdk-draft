@@ -1,4 +1,4 @@
-package com.vanhuy170496.demoapp;
+package com.demoapptoapp;
 
 import android.os.Build;
 import android.os.Bundle;
@@ -9,6 +9,7 @@ import com.facebook.react.defaults.DefaultNewArchitectureEntryPoint;
 import com.facebook.react.defaults.DefaultReactActivityDelegate;
 
 import expo.modules.ReactActivityDelegateWrapper;
+import vn.zalopay.sdk.ZaloPaySDK;
 
 public class MainActivity extends ReactActivity {
   @Override
